@@ -9,3 +9,62 @@
     display: table;
     clear: both;
 }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+/* header */
+.top{
+    height: 8vh;
+    width: 100vw;
+    line-height: 8vh;
+    background-color: black;
+    z-index: 1;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.logo{
+    width: 8%;
+    float: left;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.upgrade{
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 15px 50px;
+    color: white;
+    background-color: black;
+    font-weight: 700;
+    font-size: 20px;
+    float: right;
+    vertical-align: middle;
+}
+
+.left{
+    float: left;
+    height: 92vh;
+    width: 15vw;
+    z-index: 2;
+    background-color: black;
+}
+
+.left a{
+    color: white;
+    display: block;
+}
+
+.left a:hover{
+    border-left: 1px solid rgb(173,255,47);
+}
+
+.margin-bot{
+    margin-bottom: 30px;
+}
