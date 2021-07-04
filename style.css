@@ -142,7 +142,7 @@ nav{
     margin-right: 5px;
 }
 
-.picture{
+.profile-img{
     display: inline-block;
     width: 45px;
     height: 45px;
@@ -221,6 +221,34 @@ nav{
 .border-bot:hover{
     border-bottom: 1px solid rgb(173,255,47); 
     cursor: pointer;
+}
+
+.content h1{
+    color: white;
+    margin: 2% 0 2% 1%;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.album{
+    margin: 0 2.5% 1% 1%;
+    width: 300px;
+}
+
+.picture img{
+    width: 350px;
+    height: 350px;
+}
+
+.title{
+    color: white;
+    text-align: center;
+    margin: 3%;
+}
+
+.subtitle{
+    color: grey;
+    text-align: center;
 }
 
 /* content */
@@ -357,3 +385,4 @@ footer i{
     color: white;
     cursor: pointer;
 }
+/* footer */
