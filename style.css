@@ -242,6 +242,31 @@ nav{
     width: 335px;
 }
 
+.picture{
+    position: relative;
+}
+
+.picture .play{
+    display: none;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 500;
+}
+
+.picture:hover{
+    filter: brightness(50%);
+}
+
+.picture:hover .play{
+    display: block;
+    cursor: pointer;
+    color: white;
+}
+
 .picture img{
     width: 335px;
     height: 335px;
@@ -273,15 +298,16 @@ nav{
 }
 
 .picture:hover{
-    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
 }
 /* content */
 /* footer */
 footer{
-    /* align-items: center; */
     height: 120px;
     width: 100%;
     background-color: rgb(40,40,40);
+    position: fixed;
 }
 
 
