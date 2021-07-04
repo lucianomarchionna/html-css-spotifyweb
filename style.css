@@ -1,3 +1,4 @@
+/* common */
 *{
     margin: 0;
     padding: 0;
@@ -41,6 +42,11 @@ html{
 .line-height-90{
     line-height: 90px;
 }
+
+.border-radius-50{
+    border-radius: 50%;
+}
+/* common */
 /* nav */
 .container-main {
     height: calc(100vh - 120px);
@@ -204,6 +210,7 @@ nav{
 .content{
     height: calc(100vh - 220px);
     width: 100%;
+    overflow-y: auto;
 }
 
 .category{
@@ -225,13 +232,13 @@ nav{
 
 .content h1{
     color: white;
-    margin: 2% 0 2% 1%;
+    margin: 30px 0 30px 20px;
     font-weight: 600;
     font-size: 32px;
 }
 
 .album{
-    margin: 0 1% 1% 1%;
+    margin: 0 20px 20px 20px;
     width: 335px;
 }
 
@@ -243,14 +250,31 @@ nav{
 .title{
     color: white;
     text-align: center;
-    margin: 3%;
+    margin: 20px;
+    font-size: 22px;
 }
 
 .subtitle{
     color: grey;
     text-align: center;
+    font-size: 18px;
 }
 
+.create{
+    color: white;
+    margin: 20px;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.create-sub{
+    color: grey;
+    margin: 0 0 30px 20px;
+}
+
+.picture:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
 /* content */
 /* footer */
 footer{
