@@ -28,17 +28,28 @@ a{
 
 .column {
     flex-direction: column;
-} 
+}
 
-/* header */
+html{
+    scroll-behavior: smooth;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.line-height-90{
+    line-height: 90px;
+}
+/* nav */
 .container-main {
-    height: calc(100vh - 90px);
+    height: calc(100vh - 120px);
     width: 100%;
 }
 
 nav{
     height: 100%;
-    width: 230px;
+    width: 250px;
     justify-content: space-between;
     background-color: black;
 }
@@ -69,6 +80,10 @@ nav{
 .top li{
     padding-left: 20px;
     margin-bottom: 5px;
+}
+
+.top ul li a img{
+    vertical-align: middle;
 }
 
 .border-green:hover{
@@ -109,6 +124,7 @@ nav{
     margin-right: 5px;
     margin-bottom: 10px;
     color: black;
+    margin-right: 10px;
 }
 
 .center li{
@@ -142,6 +158,10 @@ nav{
     margin-right: 5px ;
 }
 
+.nav-bottom .download-app img{
+    vertical-align: middle;
+}
+
 .nav-bottom hr{
     width: 94%;
     margin: 10px 0;
@@ -151,27 +171,22 @@ nav{
     font-weight: 800;
     color: white;
 }
-/* header */
-/* main */
+/* nav */
+/* main-top */
 .container{
-    height: calc(100vh - 90px);
-    width: calc(100% - 230px);
+    height: calc(100vh - 120px);
+    width: calc(100% - 250px);
     background-color: rgb(20,25,34);
 }
 
 .main-top{
     background-color: rgba(0, 0, 0, 0.9);
     height: 100px;
-    width: calc(100% - 230px);
+    width: calc(100% - 250px);
     display: flex;
     justify-content: flex-end;
     align-items: center;
     position: fixed;
-}
-
-.content{
-    height: 100%;
-    width: 100%;
 }
 
 .upgrade{
@@ -184,11 +199,161 @@ nav{
     font-weight: 700;
     font-size: 20px;
 } 
+/* main-top */
+/* content */
+.content{
+    height: calc(100vh - 220px);
+    width: 100%;
+}
 
+.category{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-top: 150px;
+    color: grey;
+}
+
+.category h3{
+    margin: 0 15px;
+}
+
+.border-bot:hover{
+    border-bottom: 1px solid rgb(173,255,47); 
+    cursor: pointer;
+}
+
+/* content */
 /* footer */
-.play{
-    height: 90px;
+footer{
+    /* align-items: center; */
+    height: 120px;
     width: 100%;
     background-color: rgb(40,40,40);
 }
 
+
+.song{
+    width: 250px;
+    height: 120px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.song img{
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.song h3{
+    color: white;
+}
+
+.song h4{
+    color: grey;
+}
+
+.icon{
+    margin-left: 15px;
+}
+
+.icon i{
+    color: grey;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.icon i:hover{
+    color: white;
+}
+
+.duration{
+    height: 100%;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.icon-top{
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.duration i{
+    color: white;
+    font-size: 1.5em;
+}
+
+.duration .fa-play-circle{
+    font-size: 2.5em;
+    font-weight: 500;
+}
+
+footer i{
+    font-size: 1.3em;
+}
+
+.progress{
+    align-items: center;
+    justify-content: space-around;
+}
+
+.progress span{
+    color: white;
+}
+
+.progress .progression-bar,
+.settings .progression-bar{
+    width: 70%;
+    min-width: 150px;
+    height: 5px;
+    background-color: grey;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loading{
+    width: 15%;
+    position: absolute;
+    left: 0;
+    height: 5px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.progression-bar:hover .loading{
+    background-color: rgb(173,255,47);
+}
+
+.circle{
+    display: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    background-color: white;
+}
+
+.progression-bar:hover .circle{
+    display: block;
+}
+
+.settings{
+    width: 15%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.settings i{
+    color: white;
+    cursor: pointer;
+}
