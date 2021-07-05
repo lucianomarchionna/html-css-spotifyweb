@@ -46,3 +46,15 @@
     }
 
 }
+
+@media (max-height: 600px){
+
+    .main-top{
+        display: none;
+    }
+
+    .category{
+        margin-top: 20px;
+    }
+
+}
