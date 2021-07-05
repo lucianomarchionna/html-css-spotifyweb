@@ -1,0 +1,48 @@
+@media (max-width: 610px){
+    
+    nav{
+        width: 70px;
+    }
+
+    .logo-sm,
+    .profile-img{
+        margin: 0 auto;
+    }
+
+    .nav-bottom{
+        margin: 0;
+        padding: 0;
+    }
+
+    .download-app{
+        justify-content: center;
+    }
+
+    .profile-img,
+    .logo-sm{
+        display: block;
+        width: 40px;
+    }
+
+    .logo,
+    .top span,
+    .center,
+    .nav-bottom span,
+    .nav-bottom hr{
+        display: none;
+    }
+
+    .main-top,
+    .container{
+        width: calc(100% - 70px);
+    }
+    
+} 
+
+@media (max-width: 450px){
+
+    .settings .progression-bar{
+        display: none;
+    }
+
+}

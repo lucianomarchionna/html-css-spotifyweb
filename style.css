@@ -46,6 +46,10 @@ html{
 .border-radius-50{
     border-radius: 50%;
 }
+
+.wrap{
+    flex-wrap: wrap;
+}
 /* common */
 /* nav */
 .container-main {
@@ -79,6 +83,10 @@ nav{
     object-fit: cover;
 }
 
+.logo-sm{
+    display: none;
+}
+
 .top{
     margin: 20px 0;
 }
@@ -90,6 +98,15 @@ nav{
 
 .top ul li a img{
     vertical-align: middle;
+}
+
+.top span{
+    color: grey;
+    font-size: 24px;
+}
+
+.top span:hover{
+    color: white;
 }
 
 .border-green:hover{
@@ -246,6 +263,7 @@ nav{
 }
 
 .album{
+    z-index: 1;
     margin: 0 20px 20px 20px;
     width: 335px;
 }
@@ -317,7 +335,6 @@ footer{
     position: fixed;
 }
 
-
 .song{
     width: 250px;
     height: 120px;
@@ -362,7 +379,7 @@ footer{
 
 .duration{
     height: 100%;
-    width: 40%;
+    width: 800px;
     justify-content: space-around;
 }
 
@@ -443,7 +460,7 @@ footer i{
 }
 
 .settings{
-    width: 15%;
+    width: 400px;
     justify-content: space-around;
     align-items: center;
 }
