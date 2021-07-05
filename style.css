@@ -62,7 +62,7 @@ nav{
 
 .left a{
     color: grey;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .left a:hover{
@@ -126,11 +126,14 @@ nav{
     text-align: center;
     line-height: 35px;
     font-size: 30px;
-    background-color: rgb(163,163,163);
-    margin-right: 5px;
+    background-color: grey;
     margin-bottom: 10px;
     color: black;
     margin-right: 10px;
+}
+
+.center .padding-l .plus:hover{
+    background-color: white;
 }
 
 .center li{
@@ -204,11 +207,16 @@ nav{
     background-color: black;
     font-weight: 700;
     font-size: 20px;
+    z-index: 999;
 } 
+
+.upgrade:hover{
+    transform:scale(1.1);
+}
 /* main-top */
 /* content */
 .content{
-    height: calc(100vh - 220px);
+    height: calc(100vh - 120px);
     width: 100%;
     overflow-y: auto;
 }
@@ -257,14 +265,13 @@ nav{
     font-weight: 500;
 }
 
-.picture:hover{
+.picture:hover img{
     filter: brightness(50%);
 }
 
-.picture:hover .play{
+.picture:hover  .play{
     display: block;
     cursor: pointer;
-    color: white;
 }
 
 .picture img{
@@ -333,6 +340,12 @@ footer{
     color: grey;
 }
 
+.song h4:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+}
+
 .icon{
     margin-left: 15px;
 }
@@ -359,6 +372,10 @@ footer{
     align-items: center;
     margin: 0 auto;
     cursor: pointer;
+}
+
+.icon-top .play:hover{
+    transform:scale(1.1);
 }
 
 .duration i{
